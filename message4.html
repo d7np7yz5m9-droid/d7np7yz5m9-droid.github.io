@@ -1,11 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Final Message</title>
+</head>
+
 <body style="font-family: monospace; padding: 30px; background-color: #000; color: #00ff99;">
 
 <h3>// final_output</h3>
 
 <p id="typing"></p>
-
-<br><br>
-<a href="birthday.html" style="color:#00ff99;">Birthday Surprise 🎂 ➜</a>
 
 <script>
 const text = `
@@ -20,6 +23,7 @@ Just real feelings ❤️
 `;
 
 let i = 0;
+
 function typeWriter() {
   if (i < text.length) {
     document.getElementById("typing").innerHTML += text.charAt(i);
@@ -27,11 +31,15 @@ function typeWriter() {
     setTimeout(typeWriter, 30);
   }
 }
+
 typeWriter();
 </script>
 
-</body>
 <br><br>
+
 <a href="message5.html" style="color:#00ff99;">
   Birthday Surprise 🎂 ➜
 </a>
+
+</body>
+</html>
