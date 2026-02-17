@@ -1,33 +1,34 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Final Message</title>
-</head>
-<body style="font-family: monospace; padding: 30px; background-color: #111; color: #00ff99;">
+<body style="font-family: monospace; padding: 30px; background-color: #000; color: #00ff99;">
 
-  <h3>// final_output</h3>
+<h3>// final_output</h3>
 
-  <p>
-    if (Archita_smiles) {
-    <br>
-    &nbsp;&nbsp;my_heart = happy;
-    <br>
-    }
-  </p>
+<p id="typing"></p>
 
-  <p>
-    You are the constant I never want to change.
-    <br><br>
-    No bugs.
-    <br>
-    No errors.
-    <br>
-    Just real feelings. ❤️
-  </p>
+<br><br>
+<a href="birthday.html" style="color:#00ff99;">Birthday Surprise 🎂 ➜</a>
 
-  <p>
-    — Written only for Archita.
-  </p>
+<script>
+const text = `
+if (Archita_smiles) {
+    my_heart = happy;
+}
+
+You are the constant I never want to change.
+No bugs.
+No errors.
+Just real feelings ❤️
+`;
+
+let i = 0;
+function typeWriter() {
+  if (i < text.length) {
+    document.getElementById("typing").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typeWriter, 30);
+  }
+}
+typeWriter();
+</script>
 
 </body>
-</html>
+
