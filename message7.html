@@ -1,1 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Her Nicknames 🥰</title>
+</head>
 
+<body style="font-family: monospace; padding: 30px; background-color: #000; color: #ffd633;">
+
+<h2>// my_favorite_names</h2>
+
+<p id="typing"></p>
+
+<br><br>
+
+<a href="index.html" style="color:#ffd633;">Back to Start 🔁</a>
+
+<script>
+
+const text = `
+const nicknames = [
+  "Achu 💛",
+  "Pidi 🥺",
+  "Shotu 😌",
+  "Gawali 😂",
+  "Betu ❤️",
+  "Babde 🫶",
+  "Lado Rani 👑",
+  "Darlo 😏",
+  "Karchita 💕",
+  "Andddd manyyy more..."
+];
+
+nicknames.forEach(name => {
+  heart += happiness;
+});
+
+No matter what I call you,
+you'll always be my favorite person.
+`;
+
+let i = 0;
+function typeWriter() {
+  if (i < text.length) {
+    document.getElementById("typing").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typeWriter, 25);
+  }
+}
+
+typeWriter();
+
+</script>
+
+</body>
+</html>
