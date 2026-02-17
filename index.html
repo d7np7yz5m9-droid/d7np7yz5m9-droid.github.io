@@ -1,22 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>For Archita ❤️</title>
+  <title>Private Message 🔐</title>
 </head>
-<body style="font-family: monospace; padding: 30px; background-color: #111; color: #00ff99;">
 
-  <h2>Initializing Feelings...</h2>
+<body style="background-color:black; color:#00ff99; font-family:monospace; text-align:center; padding-top:100px;">
 
-  <p>
-    System.out.println("Hi Archita ❤️");
-  </p>
+<h2>🔐 Private Access Required</h2>
 
-  <p>
-    I built something small for you.
-    Click below to continue...
-  </p>
+<p>Enter Secret Code:</p>
 
-  <a href="message1.html" style="color: #00ff99;">Open next message ➜</a>
+<input type="password" id="password" style="padding:10px; font-family:monospace;">
+<br><br>
+
+<button onclick="checkPassword()" style="padding:10px; background:#00ff99; border:none;">
+  Unlock 💚
+</button>
+
+<p id="error" style="color:red;"></p>
+
+<script>
+function checkPassword() {
+  var entered = document.getElementById("password").value;
+
+  var correctPassword = "achu23";
+
+  if (entered === correctPassword) {
+    window.location.href = "message1.html";
+  } else {
+    document.getElementById("error").innerHTML = "Wrong code 💔";
+  }
+}
+</script>
 
 </body>
 </html>
